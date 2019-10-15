@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-body {}
+body {
+  position: relative;
+}
 
 header {
   width: 80%;
@@ -59,10 +61,25 @@ p {
 #winner {
   position: absolute;
   left: 50%;
+  /* top: 50%; */
+  -webkit-transform: translateX(-50%);
+  background-color: blue;
+  /* margin: -70px 0 0 -170px; */
+  height: 25rem;
+  width: 30rem;
+  visibility: hidden;
+}
+button {
+
+}
+#draw {
+  position: absolute;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: blue;
   visibility: hidden;
+  /* display: none; */
 }
 /* img {
   width: 1rem;
