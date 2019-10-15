@@ -23,19 +23,26 @@ ul {
   list-style: none;
   display: inline-block;
 }
-.container {
+ /* .container {
   width: 30rem;
   height: 30rem;
   margin: 0 auto;
-  /* background-color: black; */
   padding: 2.5rem;
+} */
+.container {
+  width: 30rem;
+  height: 30rem;
+  display: grid;
+  grid-template: repeat(3, 1fr) /repeat(3, 1fr);
+  grid-gap: 1px;
+  margin: 0 auto;
 }
 .container div {
   background-color: #454545;
-  width: 8rem;
-  height: 8rem;
+  width: 9rem;
+  height: 9rem;
   display: inline-block;
-  margin: 0 auto;
+  margin: auto;
 }
 .square:hover {
   background-color: black;
@@ -49,7 +56,14 @@ ul {
 p {
   display: none;
 }
-
+#winner {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: blue;
+  visibility: hidden;
+}
 /* img {
   width: 1rem;
   margin: 0;
