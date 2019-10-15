@@ -11,7 +11,7 @@ $(document).on('click', '.square', function() {
     if (turn === "nought") {
       nought = nought += Number($(this).text());
       noughtScore.push(Number($(this).text()));
-      // winner(noughtScore);
+      winner(nought, noughtScore);
       console.log("nought");
       $(this).removeClass('square');
       $(this).addClass('nought');
@@ -19,11 +19,11 @@ $(document).on('click', '.square', function() {
   } else {
       cross = cross += Number($(this).text());
       crossScore.push(Number($(this).text()))
-      // winner(crossScore);
+      winner(cross, crossScore);
       $(this).removeClass('square');
       $(this).addClass('cross');
       console.log("cross");
-      turn = "nought"
+      turn = "nought";
   }
 });
 
@@ -35,30 +35,26 @@ $(document).on('click', '.square', function() {
 
 // const turns; //log how many turns are taken
 
-// const winner = function(score) {
-//   if (turn === "nought"){
-//     return;
-//   }
-//   for (let i = 0; winningScores.length > i; i++) {
-//     // console.log(winningScores[i]);
-//     //score needs to use only 3 selections
-//
-//     if (score === winningScores[i]) {
-//       console.log('here');
-//       alert(`winner`);
-//     } else if( (score - noughtScore[0]) === winningScores[i]  ){
-//       alert('winner');
-//       console.log('there');
-//     } else if( (score - noughtScore[1]) === winningScores[i]  ){
-//       alert('winner');
-//     } else if( (score - noughtScore[2]) === winningScores[i]  ){
-//       alert('winner');
-//     } else if( (score - noughtScore[3]) === winningScores[i]  ){
-//       alert('winner');
-//     }
-//   }
-//   return false;
-// };
+const winner = function(score, player) {
+
+  for (let i = 0; winningScores.length > i; i++) {
+    // console.log(winningScores[i]);
+    //score needs to use only 3 selections
+
+    if (score === winningScores[i]) {
+      alert(`winner`);
+    } else if( (score - player[0]) === winningScores[i]  ){
+      alert('winner');
+    } else if( (score - player[1]) === winningScores[i]  ){
+      alert('winner');
+    } else if( (score - player[2]) === winningScores[i]  ){
+      alert('winner');
+    } else if( (score - player[3]) === winningScores[i]  ){
+      alert('winner');
+    }
+  }
+  return false;
+};
 
 // const guess = function(score) {
 //   for (let i = 0; score.length > i; i++) {
