@@ -1,30 +1,29 @@
 // toggle between knots and crosses
-let turn = "knought";
-let knoughtScore = [];
+let turn = "nought";
+let noughtScore = [];
+let nought = 0;
 let crossScore = [];
-let win = 0
+let cross = 0;
 const winningScores = [7, 56, 73, 84, 146, 273, 292, 448];
 
 $(document).on('click', '.square', function() {
 
-    if (turn === "knought") {
-      // knoughtScore = knoughtScore += Number($(this).text());
-      knoughtScore.push(Number($(this).text()));
-      winner(knoughtScore);
-      console.log("knought");
+    if (turn === "nought") {
+      nought = nought += Number($(this).text());
+      noughtScore.push(Number($(this).text()));
+      // winner(noughtScore);
+      console.log("nought");
       $(this).removeClass('square');
-      // $(this).attr('id', 'knot');
-      $(this).addClass('knought');
-      // let knot = $(this).html('<h5>knot</h5>');
+      $(this).addClass('nought');
       turn = "cross";
   } else {
-      // crossScore = crossScore += Number($(this).text());
+      cross = cross += Number($(this).text());
       crossScore.push(Number($(this).text()))
-      winner(crossScore);
+      // winner(crossScore);
       $(this).removeClass('square');
       $(this).addClass('cross');
       console.log("cross");
-      turn = "knought"
+      turn = "nought"
   }
 });
 
@@ -32,30 +31,42 @@ $(document).on('click', '.square', function() {
 //      | 1| 2 | 4 | 7
 //      | 8| 16| 32| 56
 //      |64|128|256| 448
-//      73  146 292
+//       73 146 292
 
 // const turns; //log how many turns are taken
 
-const winner = function(score) {
-  for (let i = 0; winningScores.length > i; i++) {
-    // console.log(winningScores[i]);
-    //score needs to use only 3 selections
+// const winner = function(score) {
+//   if (turn === "nought"){
+//     return;
+//   }
+//   for (let i = 0; winningScores.length > i; i++) {
+//     // console.log(winningScores[i]);
+//     //score needs to use only 3 selections
+//
+//     if (score === winningScores[i]) {
+//       console.log('here');
+//       alert(`winner`);
+//     } else if( (score - noughtScore[0]) === winningScores[i]  ){
+//       alert('winner');
+//       console.log('there');
+//     } else if( (score - noughtScore[1]) === winningScores[i]  ){
+//       alert('winner');
+//     } else if( (score - noughtScore[2]) === winningScores[i]  ){
+//       alert('winner');
+//     } else if( (score - noughtScore[3]) === winningScores[i]  ){
+//       alert('winner');
+//     }
+//   }
+//   return false;
+// };
 
-    if (score === winningScores[i]) {
-      // return 'winner';
-      alert(`winner`);
-    }
-  }
-  return false;
-};
-
-const guess = function(score) {
-  for (let i = 0; score.length > i; i++) {
-    // console.log(score[i]);
-    win = score[0]+score[1]+score[2];
-    console.log(win);
-  }
-}
+// const guess = function(score) {
+//   for (let i = 0; score.length > i; i++) {
+//     // console.log(score[i]);
+//     win = score[i]+score[i+1]+score[i+2];
+//     console.log(win);
+//   }
+// }
 // console.log(winner(146));
 //need to factor in an incorrect guess. can only accept 3 squares to reach a
 // correct total.
