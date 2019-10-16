@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -12,16 +13,11 @@ html {
 body {
   position: relative;
   margin: 0;
-
-}
-.score {
-  /* background-color: rgba(255, 0, 0, 0.5); */
 }
 h3 {
   display: inline;
   color: black;
-  font-family: 'Luckiest Guy';
-  letter-spacing: 2px;
+  font-family: 'Press start 2p';
 }
 #title {
   width: 10%;
@@ -37,11 +33,12 @@ header h1 {
   text-align: center;
   color: #cf55a2;
   margin: 5px auto;
-  font-family: 'Luckiest Guy';
+  font-family: 'Press start 2p';
+  font-size: .5rem;
 }
 h1 div {
   display: inline;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 10px;
 }
 #green {
@@ -58,12 +55,12 @@ h1 div {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
-  background-color: gray;
+  background-color: #c4c4cc;
   padding: 10px 0;
-}
-.player li {
-  list-style: none;
-  display: inline-block;
+  border: 2px solid #43464B;
+  -moz-box-shadow:    inset 0 0 10px #43464B;
+  -webkit-box-shadow: inset 0 0 10px #43464B;
+  box-shadow:         inset 0 0 10px #43464B;
 }
 
 .container {
@@ -118,23 +115,36 @@ p {
 .endGame {
   width: 30rem;
   height: 20rem;
-  background-color: #9c9caf;
+  background-color: #c4c4cc;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -10rem 0 0 -15rem;
-  box-shadow: 0 8px 6px -6px black;
+  /* box-shadow: 0 8px 6px -6px black; */
+  border: 2px solid #43464B;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
 }
 .end {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 5rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  font-family: 'Press start 2p';
+
 }
 button {
   width: 10rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
   margin: 0 auto;
+  font-family: 'Press start 2p';
+  border: solid 1.5px black;
+}
+.raise:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #45a639;
 }

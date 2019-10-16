@@ -84,7 +84,7 @@ const countCheck = function(count, array, player) {
 
 const winGame = function() {
   $('header').after('<div class="animated bounceInDown endGame"></div>')
-  $('.endGame').append(`<h2 class="end">Player: ${player} Wins!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
+  $('.endGame').append(`<h2 class="end">Player: ${player} Wins!</h2><button type="button" name="reset" class="reset raise">Play Again?</button>`);
   $('.score').addClass('animated bounce');
 }
 
