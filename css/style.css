@@ -1,16 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Orbitron:400,700&display=swap');
 * {
   box-sizing: border-box;
 }
 body {
   position: relative;
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+
+}
+h2, h3 {
+  font-family: 'Orbitron';
+  display: inline;
+  color: #cf55a2;
 }
 
 header {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background-color: gray;
 }
 header h1 {
   text-align: center;
+  font-family: 'Orbitron';
+  color: #cf55a2;
+
 }
 .score {
   width: 49%;
@@ -40,14 +53,14 @@ ul {
   margin: 0 auto;
 }
 .container div {
-  background-color: #454545;
+  background-color: rgb(4, 42, 129);
   width: 9rem;
   height: 9rem;
   display: inline-block;
   margin: auto;
 }
 .square:hover {
-  background-color: black;
+  background-color: #cf55a2
 }
 .cross {
   background-image: url('../images/cross.svg');
@@ -58,31 +71,24 @@ ul {
 p {
   display: none;
 }
-#winner {
-  position: absolute;
-  left: 50%;
-  /* top: 50%; */
-  -webkit-transform: translateX(-50%);
-  background-color: blue;
-  /* margin: -70px 0 0 -170px; */
-  height: 25rem;
+
+.endGame {
   width: 30rem;
-  visibility: hidden;
+  height: 20rem;
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10rem 0 0 -15rem;
+}
+.end {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 button {
-
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0 auto;
 }
-#draw {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: blue;
-  visibility: hidden;
-  /* display: none; */
-}
-/* img {
-  width: 1rem;
-  margin: 0;
-  padding: 0;
-} */

@@ -8,6 +8,7 @@
 //       73 146 292
 
 // VARIABLES for wins/draws/score keeping etc.
+
 let turn = "nought";
 let player = '';
 let noughtArray = [];
@@ -53,8 +54,10 @@ const tracker = function() {
   count += 1;
 
   if (count == 9) {
-    console.log('draw');
-    $('#draw').css('visibility', 'visible');
+    // console.log('draw');
+    $('header').after('<div class="animated bounceInDown endGame"></div>')
+    $('.endGame').append(`<h2 class="end">It's A Draw!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
+
   }
 };
 
@@ -65,39 +68,27 @@ const countCheck = function(count, array, player) {
 
     if (count === winningScores[i]) {
       winner = player;
-        $('#winner').append('<h2 class="win"></h2>');
-        $('.win').text(`${player}`)
-        $('#winner').css('visibility', 'visible');
+      winGame();
 
     } else if( (count - array[0]) === winningScores[i] ){
       winner = player;
-        $('#winner').append('<h2 class="win"></h2>');
-        $('.win').text(`${player}`)
-        $('#winner').css('visibility', 'visible');
+      winGame();
 
     } else if( (count - array[1]) === winningScores[i] ){
       winner = player;
-        $('#winner').append('<h2 class="win"></h2>');
-        $('.win').text(`${player}`)
-        $('#winner').css('visibility', 'visible');
+      winGame();
 
     } else if( (count - array[2]) === winningScores[i] ){
       winner = player;
-        $('#winner').append('<h2 class="win"></h2>');
-        $('.win').text(`${player}`)
-        $('#winner').css('visibility', 'visible');
+      winGame();
 
     } else if( (count - array[3]) === winningScores[i] ){
       winner = player;
-        $('#winner').append('<h2 class="win"></h2>');
-        $('.win').text(`${player}`)
-        $('#winner').css('visibility', 'visible');
+      winGame();
 
     } else if( (count - array[4]) === winningScores[i] ){
       winner = player;
-        $('#winner').append('<h2 class="win"></h2>');
-        $('.win').text(`${player}`)
-        $('#winner').css('visibility', 'visible');
+      winGame();
     }
   }
   return false;
@@ -106,10 +97,9 @@ const countCheck = function(count, array, player) {
 /// WINNER display ///
 
 const winGame = function() {
-  
-  $('#winner').append('<h2 class="win"></h2>');
-  $('.win').text(`${player}`)
-  $('#winner').css('visibility', 'visible');
+  $('header').after('<div class="animated bounceInDown endGame"></div>')
+  $('.endGame').append(`<h2 class="end">Player: ${player} Wins!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
+  // $('.endGame').append('<button type="button" name="reset" class="reset">Play Again?</button>');
 }
 
 /// SCORE keeper ////
@@ -123,12 +113,13 @@ const scoreTracker = function() {
 // once players reach certain scores, characters level up/evolve
 
 // GAME RESET
-$('.reset').click(function() {
+$(document).on('click', '.reset', function() {
   $('.nought, .cross').removeClass().addClass('square');
   $('#winner').css('visibility', 'hidden');
   $('#draw').css('visibility', 'hidden');
   $('#winner').remove('h2');
   $('.win').remove();
+  $('.endGame').remove();
   turn = 'nought';
   noughtArray = [];
   noughtCount = 0;
@@ -137,4 +128,5 @@ $('.reset').click(function() {
   player = '';
   count = 0;
   winner = '';
+  console.log('clicked');
 });
