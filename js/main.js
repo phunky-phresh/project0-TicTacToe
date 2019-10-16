@@ -47,20 +47,6 @@ $(document).on('click', '.square', function() {
   }
 });
 
-/// DRAW function ///
-let count = 0;
-
-const tracker = function() {
-  count += 1;
-
-  if (count == 9) {
-    // console.log('draw');
-    $('header').after('<div class="animated bounceInDown endGame"></div>')
-    $('.endGame').append(`<h2 class="end">It's A Draw!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
-
-  }
-};
-
 // WIN function
 const countCheck = function(count, array, player) {
 
@@ -99,8 +85,22 @@ const countCheck = function(count, array, player) {
 const winGame = function() {
   $('header').after('<div class="animated bounceInDown endGame"></div>')
   $('.endGame').append(`<h2 class="end">Player: ${player} Wins!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
-  // $('.endGame').append('<button type="button" name="reset" class="reset">Play Again?</button>');
+  $('.score').addClass('animated bounce');
 }
+
+/// DRAW function ///
+let count = 0;
+
+const tracker = function() {
+  count += 1;
+
+  if (count == 9) {
+    // console.log('draw');
+    $('header').after('<div class="animated bounceInDown endGame"></div>')
+    $('.endGame').append(`<h2 class="end">It's A Draw!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
+
+  }
+};
 
 /// SCORE keeper ////
 const scoreTracker = function() {
@@ -112,7 +112,7 @@ const scoreTracker = function() {
 /// LEVEL UP ///
 // once players reach certain scores, characters level up/evolve
 
-// GAME RESET
+// GAME RESET //
 $(document).on('click', '.reset', function() {
   $('.nought, .cross').removeClass().addClass('square');
   $('#winner').css('visibility', 'hidden');
@@ -120,6 +120,7 @@ $(document).on('click', '.reset', function() {
   $('#winner').remove('h2');
   $('.win').remove();
   $('.endGame').remove();
+  $('.score').removeClass('animated bounce');
   turn = 'nought';
   noughtArray = [];
   noughtCount = 0;
@@ -128,5 +129,4 @@ $(document).on('click', '.reset', function() {
   player = '';
   count = 0;
   winner = '';
-  console.log('clicked');
 });
