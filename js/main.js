@@ -1,11 +1,12 @@
-//   273            84
-//      | 1+ 2 + 4 | = 7
-//      ++++++++++++
-//      | 8+ 16+ 32| = 56
-//      ++++++++++++
-//      |64+128+256| = 448
-//      ============
-//       73 146 292
+//     273                 84
+//        \               /
+//          1 |   2 |   4  = 7
+//       -----+-----+-----
+//          8 |  16 |  32  = 56
+//       -----+-----+-----
+//         64 | 128 | 256  = 448
+//       =================
+//         73   146   292
 
 // VARIABLES for wins/draws/score keeping etc.
 
@@ -52,6 +53,7 @@ const countCheck = function(count, array, player) {
 
   for (let i = 0; winningScores.length > i; i++) {
 
+
     if (count === winningScores[i]) {
       winner = player;
       winGame();
@@ -95,10 +97,8 @@ const tracker = function() {
   count += 1;
 
   if (count === 9) {
-    // console.log('draw');
     $('header').after('<div class="animated bounceInDown endGame"></div>')
     $('.endGame').append(`<h2 class="end">It's A Draw!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
-
   }
 };
 
