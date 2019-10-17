@@ -20,7 +20,7 @@ The requirements included functionality such as:
 
 ## Screenshots
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen1.png)
 
 ![alt text](http://url/to/img.png)
 
