@@ -30,7 +30,7 @@ const winningScores = [7, 56, 73, 84, 146, 273, 292, 448];
 My logic was based on collecting the scores of each square clicked by a player, then finding the sum of the selected squares.
 If the sum was equal to a winning value, a winner would be declared.
 ## Screenshots
-
+![Alt text](http://images/star.png "Optional title")
 ## Technology Used
 - jQuery 3.4.1
 - CSS3
@@ -49,7 +49,8 @@ for sure, once the code is more refined, it will hopefully require a lot less co
 - flawless game logic
 - competitive AI
 - ability to pick characters before playing game
-## help text
+
+### help text
 The game page loads with a quick tutorial on what Tic, Tac, Toe is and the aim of the game. Once the 'Play Game' button is clicked, player one will be able to select their first square. Player two will follow and the players will take turns till the game is won or drawn.
 
 when a draw or win is declared, players will have the option to continue playing and keep track of wins in their respective score board.
