@@ -180,6 +180,12 @@ button:hover {
   h3 {font-size: 10px;}
   .container {max-width: 400px; max-height: 400px;}
   .score {padding: 5px;}
-  body {margin-top: 400px;}
+  /* body {margin-top: 400px;} */
+  .help {width: 30rem; height: 24rem; margin: -12rem 0 0 -15rem;}
+  html { background-image: url('../images/background_min.png')}
 
+
+}
+@media (max-width: 300px) {
+  html { background-image: url('../images/background_minnier.png')}
 }
