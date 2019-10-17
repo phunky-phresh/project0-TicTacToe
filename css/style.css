@@ -169,7 +169,7 @@ button:hover {
 
 /* WEB RESPONSIVENESS */
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   h1 div {
     font-size: 1.5rem;
   }
@@ -183,7 +183,7 @@ button:hover {
   html {
     background-size: auto;
   }
-}
+} */
 @media (max-width: 700px) {
   h1 div {
     font-size: 1rem;
@@ -207,7 +207,7 @@ button:hover {
     margin: -12rem 0 0 -15rem;
   }
   html {
-    background-image: none;
-    background-color: blue;
+    background-image: url('../images/background_min.png');
+    background-size: 700px auto;
   }
 }

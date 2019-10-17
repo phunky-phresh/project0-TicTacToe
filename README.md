@@ -24,7 +24,7 @@ The requirements included functionality such as:
 ![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen2.png)
 ![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen3.png)
 ![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen4.png)
-
+<img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen1.png" width="300">
 ## The Logic ( I did it weird)
 
 ```
