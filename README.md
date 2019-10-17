@@ -30,7 +30,7 @@ const winningScores = [7, 56, 73, 84, 146, 273, 292, 448];
 My logic was based on collecting the scores of each square clicked by a player, then finding the sum of the selected squares.
 If the sum was equal to a winning value, a winner would be declared.
 ## Screenshots
-![Alt text](http://../images/star.png "Optional title")
+![Alt text](../images/star.png "Optional title")
 ## Technology Used
 - jQuery 3.4.1
 - CSS3
