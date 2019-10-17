@@ -180,5 +180,6 @@ button:hover {
   h3 {font-size: 10px;}
   .container {max-width: 400px; max-height: 400px;}
   .score {padding: 5px;}
+  body {margin-top: 400px;}
 
 }
