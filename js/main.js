@@ -84,17 +84,17 @@ const countCheck = function(count, array, player) {
 
 const winGame = function() {
   $('header').after('<div class="animated bounceInDown endGame"></div>')
-  $('.endGame').append(`<h2 class="end">Player: ${player} Wins!</h2><button type="button" name="reset" class="reset raise">Play Again?</button>`);
+  $('.endGame').append(`<h2 class="end">Player: ${player} Wins!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
   $('.score').addClass('animated bounce');
 }
 
 /// DRAW function ///
 let count = 0;
-
+//
 const tracker = function() {
   count += 1;
 
-  if (count == 9) {
+  if (count === 9) {
     // console.log('draw');
     $('header').after('<div class="animated bounceInDown endGame"></div>')
     $('.endGame').append(`<h2 class="end">It's A Draw!</h2><button type="button" name="reset" class="reset">Play Again?</button>`);
@@ -119,8 +119,12 @@ $(document).on('click', '.reset', function() {
   $('#draw').css('visibility', 'hidden');
   $('#winner').remove('h2');
   $('.win').remove();
+  $('.endGame').addClass('animated fadeOutDown');
+  setTimeout(function(){
   $('.endGame').remove();
+  }, 1000);
   $('.score').removeClass('animated bounce');
+
   turn = 'nought';
   noughtArray = [];
   noughtCount = 0;
@@ -130,3 +134,12 @@ $(document).on('click', '.reset', function() {
   count = 0;
   winner = '';
 });
+
+// removes Help page //
+$(document).on('click', '.start', function() {
+  $('.help').addClass('animated fadeOutDown');
+  setTimeout(function(){
+  $('.help').remove();
+}, 1000);
+  // $('.help').hide();
+})
