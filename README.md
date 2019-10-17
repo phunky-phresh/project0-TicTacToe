@@ -20,9 +20,10 @@ The requirements included functionality such as:
 
 ## Screenshots
 
-![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen1.png)
-
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen1.png | width 250px)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen2.png)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen3.png)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen4.png)
 
 ## The Logic ( I did it weird)
 
