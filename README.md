@@ -20,10 +20,10 @@ The requirements included functionality such as:
 
 ## Screenshots
 
-![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen1.png | width=250px)
-![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen2.png | width=250px)
-![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen3.png | width=250px)
-![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen4.png | width=250px)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen1.png | width=250)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen2.png | width=250)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen3.png | width=250)
+![alt text](https://github.com/phunky-phresh/project0-TicTacToe/blob/master/images/screen4.png | width=250)
 
 ## The Logic ( I did it weird)
 
