@@ -18,7 +18,13 @@ The requirements included functionality such as:
  - There is an individual score keeper for each player. for each game won, the scores are updated.
  - Play Again/Reset: a reset is declared at the end of each game. This resets all features of the board game except for the score keeper.
 
-### The Logic ( I did it weird)
+## Screenshots
+
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+![alt text](http://url/to/img.png)
+
+## The Logic ( I did it weird)
 
 ```
 //     273                 84
