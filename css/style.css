@@ -207,7 +207,7 @@ button:hover {
     margin: -12rem 0 0 -15rem;
   }
   html {
-    background-image: url('../images/background_min.png');
-    background-size: auto;
+    background-image: none;
+    background-color: blue;
   }
 }
