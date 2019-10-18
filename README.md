@@ -20,12 +20,16 @@ The requirements included functionality such as:
 
 ## Screenshots
 
+load screen
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen1.png" width="300">
+hover image
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen2.png" width="300">
+character replaces square
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen3.png" width="300">
+player wins window
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen4.png" width="300">
 
-## The Logic ( I did it weird)
+## The Logic (I did it weird)
 
 ```
 //     273                 84
@@ -67,10 +71,10 @@ const tracker = function() {
 When trying to set media queries for the background image,
 ### Can it be fixed?
 For sure, once the code is more refined, it will hopefully require a lot less code to factor in this type of win. for now, just **try not to lose, player two!**
-## Acknowledgement
 
-## Wish List
+## What Next
 - flawless game logic
+- larger game board
 - competitive AI
 - ability to pick characters before playing game
 
