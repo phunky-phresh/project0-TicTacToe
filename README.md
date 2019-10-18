@@ -20,13 +20,12 @@ The requirements included functionality such as:
 
 ## Screenshots
 
-load screen
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen1.png" width="300">
-hover image
+
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen2.png" width="300">
-character replaces square
+
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen3.png" width="300">
-player wins window
+
 <img src="https://raw.githubusercontent.com/phunky-phresh/project0-TicTacToe/master/images/screen4.png" width="300">
 
 ## The Logic (I did it weird)
@@ -68,7 +67,10 @@ const tracker = function() {
 ```
 #### Media Query
 
-When trying to set media queries for the background image,
+When trying to set media queries for the background image there is responsiveness unless displayed on a **mobile device**. It could be that it is an issue with the queries themselves, or an existing style that needs to be removed.
+
+Apart from that it is responsive on a desktop display.
+
 ### Can it be fixed?
 For sure, once the code is more refined, it will hopefully require a lot less code to factor in this type of win. for now, just **try not to lose, player two!**
 
