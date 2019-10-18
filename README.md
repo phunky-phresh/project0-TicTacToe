@@ -57,7 +57,7 @@ If the sum was equal to a winning value, a winner would be declared.
 #### Draw Function
 There is one bug present that can be fixed! If player two decides to throw the game and make no attempt to win, the game cannot verify a win of 5 moves by player one. Because all the squares have been counted, it considers this a draw.
 
-``` js
+```js
 let count = 0;
 
 const tracker = function() {

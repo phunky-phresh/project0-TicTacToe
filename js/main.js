@@ -1,12 +1,3 @@
-//     273                 84
-//        \               /
-//          1 |   2 |   4  = 7
-//       -----+-----+-----
-//          8 |  16 |  32  = 56
-//       -----+-----+-----
-//         64 | 128 | 256  = 448
-//       =================
-//         73   146   292
 
 // VARIABLES for wins/draws/score keeping etc.
 
@@ -55,7 +46,6 @@ $(document).on('click', '.square', function() {
 const countCheck = function(count, array, player) {
 
   for (let i = 0; winningScores.length > i; i++) {
-
 
     if (count === winningScores[i]) {
       winner = player;
@@ -112,8 +102,8 @@ const tracker = function() {
 // function to update score board
 const scoreTracker = function() {
   let currentScore = Number($(`#${winner}`).html());
-  currentScore += 1;
-  $(`#${winner}`).text(currentScore);
+    currentScore += 1;
+    $(`#${winner}`).text(currentScore);
 }
 
 /// LEVEL UP ///
@@ -130,7 +120,7 @@ $(document).on('click', '.reset', function() {
   $('.win').remove();
   $('.endGame').addClass('animated fadeOutDown');
   setTimeout(function(){
-  $('.endGame').remove();
+    $('.endGame').remove();
   }, 1000);
   $('.score').removeClass('animated bounce');
 
@@ -148,7 +138,7 @@ $(document).on('click', '.reset', function() {
 $(document).on('click', '.start', function() {
   $('.help').addClass('animated fadeOutDown');
   setTimeout(function(){
-  $('.help').remove();
-}, 1000);
+    $('.help').remove();
+  }, 1000);
 
 });
